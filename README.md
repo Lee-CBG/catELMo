@@ -1,7 +1,7 @@
 # catELMo
 
 
-<p align="center"><img width=60% alt="Overview" src="https://github.com/Lee-CBG/catELMo/blob/main/figures/Fig4_Methods.png"></p>
+<p align="center"><img width=100% alt="Overview" src="https://github.com/Lee-CBG/catELMo/blob/main/figures/Fig4_Methods.png"></p>
 
 ## Requirement
 
