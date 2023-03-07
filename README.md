@@ -24,8 +24,8 @@ $ source activate bap
 ```
 
 ### 2. Prepare TCR-epitope pairs for training and testing
-- Download training and testing data from datasets folder.
-- Obtain embeddings for TCR and epitopes following instructions from embedders folder.
+- Download training and testing data from `datasets` folder.
+- Obtain embeddings for TCR and epitopes following instructions from `embedders` folder.
 
 
 ### 3. Train models
