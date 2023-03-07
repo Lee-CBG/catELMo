@@ -13,12 +13,32 @@ catELMo is a bi-directional amino acid embedding model that learns contextualize
 + Keras 2.6.0
 + TensorFlow 2.6.0
 
-## Want to embed your sequences using catELMo?
+## Steps to train a Binding Affinity Prediction model for TCR-epitope pairs.
 
-## Want to training your own catELMo on customed data?
+### 1. Clone the repository
+```bash
+$ git clone https://github.com/Lee-CBG/catELMo
+$ cd catELMo/
+$ conda env create -n bap -f environment.yml
+$ source activate bap
+```
 
-## Want to fine-tune from our catELMo?
-You can download the weights of our catELMo from below links.
+### 2. Prepare TCR-epitope pairs for training and testing
+- Download training and testing data from datasets folder.
+- Obtain embeddings for TCR and epitopes following instructions from embedders folder.
+
+
+### 3. Train models
+An example for training the transformer-based model
+
+```bash
+python -W ignore bap.py \
+                --embedding catELMo_4_layers_1024 \
+                --split epitope \
+                --gpu 0 \
+                --fraction 1 \
+                --seed 42
+```
 
 ## Citation
 If you use this code or use our catELMo for your research, please cite our paper:
