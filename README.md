@@ -3,7 +3,7 @@
 <br/>
 catELMo is a bi-directional amino acid embedding model that learns contextualized amino acid representations, treating an amino acid as a word and a sequence as a sentence. It learns patterns of amino acid sequences with its self-supervision signal, by predicting each the next amino acid token given its previous tokens. It has been trained on 4,173,895 TCR\(\beta\) CDR3 sequences (52 million of amino acid tokens) from ImmunoSEQ. catELMo yields a real-valued representation vector for a sequence of amino acids, which can be used as input features of various downstream tasks. This is the official implementation of catELMo.
 <br/>
-
+<br/>
 
 <p align="center"><img width=100% alt="Overview" src="https://github.com/Lee-CBG/catELMo/blob/main/figures/Fig4_Methods.png"></p>
 
