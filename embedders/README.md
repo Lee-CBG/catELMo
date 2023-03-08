@@ -68,8 +68,8 @@ import pandas as pd
 from tqdm import tqdm
 from transformers import TFBertModel,BertModel, BertForPreTraining, BertTokenizer, BertConfig
 
-tokenizer = BertTokenizer.from_pretrained("../../../bert/prot_bert", do_lower_case=False )
-model = BertModel.from_pretrained("../../../bert/ours_checkpoints/scratch/bin_our_bert_scratch")
+tokenizer = BertTokenizer.from_pretrained("./path/of/your/downloaded/TCR-Base-TCR", do_lower_case=False )
+model = BertModel.from_pretrained("./path/of/your/downloaded/TCR-Base-TCR")
 
 def BERT_embedding(x):
     seq = " ".join(x)
