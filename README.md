@@ -17,10 +17,10 @@ catELMo is a bi-directional amino acid embedding model that learns contextualize
 
 ### 1. Clone the repository
 ```bash
-$ git clone https://github.com/Lee-CBG/catELMo
-$ cd catELMo/
-$ conda env create -n bap -f environment.yml
-$ source activate bap
+git clone https://github.com/Lee-CBG/catELMo
+cd catELMo/
+conda env create -n bap -f environment.yml
+source activate bap
 ```
 
 ### 2. Prepare TCR-epitope pairs for training and testing
