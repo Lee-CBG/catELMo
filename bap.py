@@ -1,3 +1,9 @@
+'''
+Part of catELMo
+(c) 2023 by  Pengfei Zhang, Michael Cai, Seojin Bang, Heewook Lee, and Arizona State University.
+See LICENSE-CC-BY-NC-ND for licensing.
+'''
+
 import sys
 import time
 import os
