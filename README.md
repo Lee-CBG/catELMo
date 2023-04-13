@@ -44,7 +44,15 @@ python -W ignore bap.py \
 ## Citation
 If you use this code or use our catELMo for your research, please cite our paper:
 ```
-
+@article {catelmobiorxiv,
+	author = {Pengfei Zhang and Seojin Bang and Michael Cai and Heewook Lee},
+	title = {Context-Aware Amino Acid Embedding Advances Analysis of TCR-Epitope Interactions},
+	elocation-id = {2023.04.12.536635},
+	year = {2023},
+	doi = {10.1101/2023.04.12.536635},
+	publisher = {Cold Spring Harbor Laboratory},
+	journal = {bioRxiv}
+}
 ```
 
 ## License
