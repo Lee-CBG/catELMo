@@ -18,14 +18,16 @@ Each of those embedding models were trained on the same TCR repertoires (more th
 ## How to embed?
 
 ### 1. Requirements
-python 3.6, tensorflow 1.4.0, allennlp 0.9.0, torch 1.9.1 and other common packages listed in `catELMo.yml`.
+python 3.6, tensorflow 1.4.0, allennlp 0.9.0, torch 1.9.1 and other common packages listed in `catELMo.yml` for references.
 
 ### 2. Installation 
 
 ```bash
 git clone https://github.com/Lee-CBG/catELMo.git
 cd catELMo/embedders
-conda env create -n catELMo -f catELMo.yml
+conda env create -n catELMo python=3.6
+pip install allennlp==0.9.0 torch==1.9.1 pandas==1.1.5 transformers==4.11.2 tensorflow-gpu==1.14.0 overrides==3.1.0
+
 
 # Note that the requirement for embedding is differnt from the one used for downstream tasks.
 # If you have already activated the 'bap' environment, make sure deactivate it before conducting embedding.
@@ -75,7 +77,7 @@ def BERT_embedding(x):
     seq = " ".join(x)
     seq = re.sub(r"[UZOB]", "X", seq)
     encoded_input = tokenizer(seq, return_tensors='pt')
-    output = model2(**encoded_input)
+    output = model(**encoded_input)
     return output
     
 dat = pd.read_csv('./path/of/binding/affinity/prediction/data.csv')
@@ -92,7 +94,15 @@ dat.to_pickle("./path/of/binding/affinity/prediction/data.pkl")
 ## Citation
 If you use catELMo for your research, please cite our papers:
 ```
-
+@article {catelmobiorxiv,
+	author = {Pengfei Zhang and Seojin Bang and Michael Cai and Heewook Lee},
+	title = {Context-Aware Amino Acid Embedding Advances Analysis of TCR-Epitope Interactions},
+	elocation-id = {2023.04.12.536635},
+	year = {2023},
+	doi = {10.1101/2023.04.12.536635},
+	publisher = {Cold Spring Harbor Laboratory},
+	journal = {bioRxiv}
+}
 ```
 
 ## License
