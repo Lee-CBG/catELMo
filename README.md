@@ -6,6 +6,15 @@ catELMo is a bi-directional amino acid embedding model that learns contextualize
 
 <p align="center"><img width=100% alt="Overview" src="https://github.com/Lee-CBG/catELMo/blob/main/figures/Fig4_Methods.png"></p>
 
+## Publication
+<b>Context-Aware Amino Acid Embedding Advances Analysis of TCR-Epitope Interactions </b> <br/>
+[Pengfei Zhang](https://github.com/pzhang84)<sup>1,2</sup>, [Michael Cai](https://github.com/cai-michael)<sup>1,2</sup>, [Seojin Bang](http://seojinb.com/)<sup>2</sup>, [Heewook Lee](https://scai.engineering.asu.edu/faculty/computer-science-and-engineering/heewook-lee/)<sup>1,2</sup><br/>
+<sup>1 </sup>School of Computing and Augmented Intelligence, Arizona State University, <sup>2 </sup>Biodesign Institute, Arizona State University <br/>
+Published in: **bioRxiv, 2023.**
+
+
+[Paper](https://www.biorxiv.org/content/10.1101/2023.04.12.536635v1) | [Code](https://github.com/Lee-CBG/catELMo) | [Poster](https://github.com/Lee-CBG/catELMo/blob/main/figures/Zhang_Pengfei_42x42.pdf) | [Slides](#) | Presentation ([YouTube](#))
+
 ## Dependencies
 
 + Linux
