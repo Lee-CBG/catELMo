@@ -29,8 +29,8 @@ source activate bap
 - Obtain embeddings for TCR and epitopes following instructions from `embedders` folder.
 
 
-### 3. Train models
-An example for training the transformer-based model
+### 3. Train and test models
+An example for epitope split
 
 ```bash
 python -W ignore bap.py \
