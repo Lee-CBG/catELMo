@@ -29,7 +29,7 @@ Published in: **eLife, 2023.**
 git clone https://github.com/Lee-CBG/catELMo
 cd catELMo/
 conda create --name bap python=3.6.13
-pip install -r requirements.txt
+pip install pandas==1.1.5 tensorflow==2.6.0 keras==2.6.0 scikit-learn==0.24.2 tqdm
 source activate bap
 ```
 
